@@ -48,9 +48,11 @@ nav {
 
 .hero__wrapper {
   position: relative;
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
+  -webkit-clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
+  clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
 }
 
 .hero__image {
@@ -75,41 +77,55 @@ nav {
 .hero__text {
   position: relative;
   width: 100%;
-  height: 95vh;
+  height: 90vh;
 }
 
-.hero__text--main {
-  font-family: 'Merriweather', serif;
-  font-size: 60px;
+.hero__text h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: 'Merriweather', serif;
   font-weight: 700;
-}
-
-.hero__text--sub {
-  opacity: 0.8;
-  font-size: 18px;
-  padding-left: 300px;
-  padding-bottom: 10px;
-}
-
-.hero__text a.more {
-  text-decoration: none;
-  padding: 10px;
-  background-color: #fff;
-  color: #000;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.hero__text a.more:hover {
   color: #fff;
-  background-color: transparent;
-  text-decoration: underline;
 }
 
-.hero__text--container {
-  padding: 0;
+.hero__text h1::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.hero__text h6 {
+  font-size: 19px;
+  opacity: 0.8;
+}
+
+.hero__text img {
+  opacity: 0.8;
+  height: 170px;
+}
+
+.hero__text .btn {
   position: absolute;
-  bottom: 40px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: -10px;
+}
+
+.hero__text__wrapper {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 35px;
+}
+
+.hero__text .item {
+  width: 69%;
+  margin: auto;
 }
 
 .navbar-nav li {
