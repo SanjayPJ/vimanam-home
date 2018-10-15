@@ -9,8 +9,7 @@ body {
 }
 
 nav {
-  font-family: 'Merriweather', serif;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .navbar-brand {
@@ -108,11 +107,14 @@ nav {
 
 .hero__text .btn {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin-bottom: -10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 38px;
+  width: 38px;
 }
 
 .hero__text__wrapper {
@@ -129,15 +131,29 @@ nav {
 }
 
 .navbar-nav li {
-  width: 120px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
   font-size: 15px;
 }
 
 .navbar-nav li:last-child {
+  padding: 0;
   width: 35px;
   height: 35px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-item:hover {
+  background-color: #2d3338;
+}
+
+.dropdown-item:active {
+  background-color: #2ecc70b9;
 }
 /*# sourceMappingURL=style.css.map */
