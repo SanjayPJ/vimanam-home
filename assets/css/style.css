@@ -184,6 +184,7 @@ nav {
   margin: auto;
   height: 30px !important;
   display: block;
+  margin-bottom: 30px;
 }
 
 .section-options h5 {
@@ -267,6 +268,7 @@ nav {
   margin: auto;
   height: 30px !important;
   display: block;
+  margin-bottom: 30px;
 }
 
 .section-trust .card {
@@ -315,6 +317,8 @@ nav {
 
 .featured {
   margin-top: 60px;
+  margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .featured h1 {
@@ -335,5 +339,59 @@ nav {
   margin: auto;
   height: 30px !important;
   display: block;
+  margin-bottom: 30px;
+}
+
+.featured .card {
+  border: 0;
+  -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+  -webkit-transform: skewX(-5deg);
+          transform: skewX(-5deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.featured .card:hover {
+  -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.featured .image-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+}
+
+.featured .image-wrapper .h2-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.featured .image-wrapper .h2-wrapper .points {
+  position: absolute;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b48500));
+  background-image: linear-gradient(to right, #7ed56f, #28b48500);
+  display: none;
+}
+
+.featured .image-wrapper .h2-wrapper:hover .points {
+  display: block;
+}
+
+.featured .image-wrapper h2 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
 }
 /*# sourceMappingURL=style.css.map */

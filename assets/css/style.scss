@@ -180,6 +180,7 @@ nav{
             margin: auto;
             height: 30px !important;
             display: block;
+            margin-bottom: 30px;
         }
     }
     h5{
@@ -254,6 +255,7 @@ nav{
         margin: auto;
         height: 30px !important;
         display: block;
+        margin-bottom: 30px;
     }
     .card{
         border: 0;
@@ -293,6 +295,8 @@ nav{
 }
 .featured{
     margin-top: 60px;
+    margin-bottom: 60px;
+    overflow: hidden;
     h1 {
         // font-family: 'Merriweather', serif;
         font-weight: 700;
@@ -311,5 +315,53 @@ nav{
         margin: auto;
         height: 30px !important;
         display: block;
+        margin-bottom: 30px;
+    }
+    .card{
+        border: 0;
+        box-shadow: 0 15px 40px rgba($color: #000000, $alpha: .2);
+        position: relative;
+        transform: skewX(-5deg);
+        transition: all 0.2s;
+    }
+    .card:hover{
+        box-shadow: 0 15px 40px rgba($color: #000000, $alpha: .3);
+    }
+    .image-wrapper{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 9999;
+
+        .h2-wrapper{
+            position: relative;
+            height: 100%;
+            width: 100%;
+
+            .points {
+                position: absolute;
+                bottom: 0;
+                background-image: linear-gradient(to right, #7ed56f, #28b48500);
+                display: none;
+            }
+
+            &:hover{
+                .points{
+                    display: block;
+                }
+            }
+
+        }
+
+        h2{
+            position: absolute;
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 0 15px 40px rgba($color: #000000, $alpha: .8);
+        }
     }
 }
